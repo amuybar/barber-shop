@@ -1,0 +1,131 @@
+/* Login.css */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 2px rgba(211, 207, 207, 0.1);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 20px;
+  max-width: 400px;
+  width: 100%;
+  overflow: hidden;
+  
+}
+
+.login-container h1 {
+  margin-bottom: 10px;
+  font-size: 36px;
+  color: #01253C;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #024169;
+}
+
+.login-container .othermeth {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.login-container .othermeth button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4285F4;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-container .othermeth button:nth-child(2) {
+  background-color: #3b5998;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"] {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.login-container .checkbox {
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+
+.login-container button[type="submit"] {
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-container button[type="submit"]:hover {
+  background-color: #555;
+}
+
+.login-container p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-container a {
+  color: #4285F4;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .login-container {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .login-container form {
+    width: 100%;
+  }
+
+  .login-container input[type="email"],
+  .login-container input[type="password"],
+  .login-container button[type="submit"] {
+    width: 90%;
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  .login-container .othermeth {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .login-container .othermeth button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+  }
+}

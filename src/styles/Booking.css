@@ -1,0 +1,78 @@
+/* Booking.css */
+
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px 2px rgba(211, 207, 207, 0.1);
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.booking-container h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #01253C;
+}
+
+.booking-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.booking-container select,
+.booking-container input,
+.booking-container textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.booking-container textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.booking-container button[type="submit"] {
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.booking-container button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .booking-container {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .booking-container form {
+    width: 100%;
+  }
+
+  .booking-container select,
+  .booking-container input,
+  .booking-container textarea,
+  .booking-container button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+  }
+}
