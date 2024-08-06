@@ -15,7 +15,9 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const url = isRegister ? '/https://stackblitzstarterszxa5fg-acso--3000--41692973.local-credentialless.webcontainer.io/register' : '/https://stackblitzstarterszxa5fg-acso--3000--41692973.local-credentialless.webcontainer.io/login';
+    const url = isRegister
+      ? "http://localhost:3000/auth/register"
+      : "http://localhost:3000/auth/login";
     const body = isRegister ? { email, name, password } : { email, password };
 
     try {
@@ -27,6 +29,7 @@ function App() {
         body: JSON.stringify(body),
       });
       const result = await response.json();
+      console.log(result)
       if (response.ok) {
         setMessage(result.message);
       } else {
@@ -34,6 +37,7 @@ function App() {
       }
     } catch (error) {
       setMessage('An error occurred. Please try again.');
+      console.error(error)
     }
   };
 
